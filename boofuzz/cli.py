@@ -179,7 +179,7 @@ def fuzz(
     help="Address on which to serve the web interface (default localhost). Set to empty "
     "string to serve on all interfaces.",
     type=str,
-    default="localhost",
+    default="0.0.0.0",
 )
 @click.argument("filename")
 def open_file(debug, filename, ui_port, ui_addr):
